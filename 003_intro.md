@@ -10,4 +10,4 @@ Java'da ekrana veri yazdırmak için `System.out.print("Hello World!")` kod par�
 # Escape Karakterler
 Java'da Escape (Kaçış) karakterleri ile bazı özel durumlar durumlar gerçekleştirilir. Kaçış karakterleri `( / )` ters eğik çizgi ile ifade edilip sonrasında yazılan karakter ile özel işleve sahip olurlar.
 
-(./img/escape.png)
+[](./img/escape.png)
