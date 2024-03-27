@@ -1,10 +1,9 @@
 package erbalkan.rentacar.dataAccess.Abstracts;
 
-import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import erbalkan.rentacar.entities.concretes.Brand;
 
-public interface IBrandRepository {
-    List<Brand> getAll();
+public interface IBrandRepository extends JpaRepository<Brand,Integer>{
 
 }
