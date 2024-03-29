@@ -1,6 +1,10 @@
 package erbalkan.rentacar.entities.concretes;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,7 +19,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor // parametresiz constructor
 @Entity // bir veritabanı varlığı olduğunu belirtiriz.
 public class Brand {
+    @Id // tabloda Id olduğunu belirttik.
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // auto increment
+    @Column(name = "id")
     private int id;
+    @Column(name = "name")
     private String name;
 
 
